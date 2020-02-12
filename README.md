@@ -10,7 +10,7 @@ Important:- I faced some issues with `CORS`, so I ran the application in Google 
 In order to run Google Chrome by disabling web security run this command on a mac, `open -na /Applications/Google\ Chrome.app/ --args --disable-web-security --user-data-dir=""` 
 
 # Demo of the product
-You can view the demo of the product here, in my own voice: 
+You can view the demo of the product here, in my own voice: `https://drive.google.com/open?id=1KhJbz6ChwfA1gH7TR_QWWIsrDCFyJpGp`
 
 # Features implemented
 
