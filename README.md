@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 The docker image is present at `https://hub.docker.com/r/sreenivas007/zesty-app`
 
-To run the image, run `docker run -p 80:80 sreenivas007/zesty-app:prod` and simply navigate to `localhost`
+To run the image, run `docker run -p 80:80 sreenivas007/zesty-app:prod` and simply navigate to `localhost` along with running `https://github.com/zestyai/engineering-test-fs` in a docker container.
 
 Important:- I faced some issues with `CORS`, so I ran the application in Google Chrome with disabled web security mode, probably you will have to run it the same way.
 In order to run Google Chrome by disabling web security run this command on a mac, `open -na /Applications/Google\ Chrome.app/ --args --disable-web-security --user-data-dir=""` 
