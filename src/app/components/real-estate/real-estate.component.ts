@@ -31,7 +31,7 @@ export class RealEstateComponent implements OnInit {
 
   getImgUrl(): string {
     if (this.property && this.property.img) {
-      if (this.property.img === 'Error'){
+      if (this.property.img === 'Error') {
         this.isError = true;
         return '';
       }

@@ -13,9 +13,10 @@ import { fetchPropertiesSelector } from 'src/app/state-management/selectors/fetc
 })
 export class LandingComponent implements OnInit {
 
-  latitude  = '-800.0782213';
-  longitude = '26.8849731';
-  xRadius = '175500000';
+  latitude: string;
+  longitude: string;
+  xRadius: string;
+  
   properties$: Observable<any>;
 
   constructor( private store$: Store<AppState>) { }
