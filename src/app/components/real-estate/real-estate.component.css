@@ -1,0 +1,7 @@
+.real-estate {
+    cursor: pointer;
+}
+
+.real-estate :hover {
+    background-color: lightgray;
+}

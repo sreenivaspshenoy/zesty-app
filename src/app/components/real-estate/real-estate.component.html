@@ -1,0 +1,19 @@
+<div class="real-estate card mb-3" style="max-width: 100%;" (click) = "navigateToDetails()" style="height: 200px">
+  <div class="row no-gutters" *ngIf= "!isError">
+    <div class="col-md-4 view overlay zoom">
+      <img [src]= "getImgUrl()" alt="" class="img-thumbnail" (load)="this.imageLoader = false;" style="max-height: 200px;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Listing Id : {{property.propertyId}}</h5>
+        <p class="card-text">Latitude: {{property.coordinates[0]}} </p>
+        <p class="card-text">Longitude: {{property.coordinates[1]}}</p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf = "isError" class="row no-gutters justify-content-center"> 
+    <div class="card-body">
+      <h4>Error in loading Image with Id:{{property.propertyId}}.</h4>
+    </div>  
+  </div>
+</div>

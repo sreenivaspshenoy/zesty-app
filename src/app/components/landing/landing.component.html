@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="">Latitude</label>
+        <input [(ngModel)] = "latitude" type="text" class="form-control is-valid"   placeholder="e.g. -800.0782213" required>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="">Longitude</label>
+        <input [(ngModel)] = "longitude" type="text" class="form-control is-valid"   placeholder="e.g. 26.8849731" required>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="">Radius(in miles)</label>
+        <input [(ngModel)] = "xRadius" type="text" class="form-control is-valid" placeholder="e.g. 175500000">
+      </div>
+    </div>
+    <button class="btn btn-primary" (click) = "findRealEstates()" style="margin-bottom: 2rem;">Search</button>
+  <div *ngFor="let property of properties$ | async">
+      <app-real-estate [property] = property [show] = false></app-real-estate>
+  </div>
+ 
+</div>

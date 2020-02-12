@@ -1,0 +1,19 @@
+<div class="container">
+  <img [src]= "getImgUrl((selectedPropertyObs$ | async))" alt="" style="width: 100%; height: 100%;">
+  <div class="card mb-3">
+    <div class="col-md-8">
+      <div class="card-body">
+      <h5 class="card-title">Listing Id : {{(selectedPropertyObs$ | async).propertyId}}</h5>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultUnchecked" [(ngModel)] = 'displayOverlayedImg'>
+        <label class="custom-control-label" for="defaultUnchecked">Show overlays</label>
+      </div>
+    <h6 class="card-title">Statistics of property around {{getBufferDistance(selectedPropertyObs$ | async)}} meters </h6>
+    <p class="card-text">Parcel area of Property :  {{getParcelArea(selectedPropertyObs$ | async)}}</p>
+    <p class="card-text">Building Area :  {{getBuildingArea(selectedPropertyObs$ | async)}}</p>
+    <p class="card-text">Zone Density Area :  {{getZoneDensity(selectedPropertyObs$ | async)}}</p>
+    <p class="card-text">Nearby Building Distances :  {{getBuildingDistances(selectedPropertyObs$ | async)}}</p>
+    </div>
+  </div>
+</div>
+</div>
